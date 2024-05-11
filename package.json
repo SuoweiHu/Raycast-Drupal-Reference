@@ -1,10 +1,10 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "http-status-codes",
-  "title": "DEBUG - HTTP Status Codes",
-  "description": "DEBUG - Quickly look up HTTP status codes",
-  "icon": "command-icon.png",
-  "author": "Alex_",
+  "name": "drupal-cheatsheet",
+  "title": "Drupal Cheatsheet",
+  "description": "Reference of the common command/error found about Drupal CMS.",
+  "icon": "drupal-icon.png",
+  "author": "Suoweiu",
   "contributors": [
     "pernielsentikaer"
   ],
@@ -12,8 +12,8 @@
   "commands": [
     {
       "name": "index",
-      "title": "Drupal Cheatsheet",
-      "description": "Search all drupal related command here.",
+      "title": "Search Drupal Cheatsheet",
+      "description": "Search common command/error found about Drupal CMS.",
       "mode": "view"
     }
   ],
