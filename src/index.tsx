@@ -127,6 +127,13 @@ export default function Command() {
                 cmd: "vendor/bin/drush cache:rebuild;",
                 docs_href:"https://www.drush.org/12.x/commands/cache_rebuild/",
                 example: `\`\`\`\n> vendor/bin/drush cache:rebuild\n> [success] Cache rebuild complete.\n\`\`\`\n\`\`\`\n> vendor/bin/drush cr\n> [success] Cache rebuild complete.\n\`\`\``,
+            },{
+                type: "GovCMS",
+                title: "Validate SaaS Compatibility (ship-shape)",
+                description: "Use ahoy command to test SaaS compatibility of the modules/files used in the project.",
+                cmd: "ahoy ship-shape",
+                docs_href: "https://github.com/govCMS/scaffold/blob/develop/.ahoy.yml",
+                example: `\`\`\`\nahoy ship-shape\nShip is in top shape; no breach detected!\n\`\`\``,
             },
         ]
     );
