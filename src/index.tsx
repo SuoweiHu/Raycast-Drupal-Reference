@@ -134,6 +134,27 @@ export default function Command() {
                 cmd: "ahoy ship-shape",
                 docs_href: "https://github.com/govCMS/scaffold/blob/develop/.ahoy.yml",
                 example: `\`\`\`\nahoy ship-shape\nShip is in top shape; no breach detected!\n\`\`\``,
+            },{
+                type: "MySql",
+                title: "Import Database (for Recovery Usually",
+                description: "Use mysql command to import .sql/.msql file into certain database",
+                cmd: "mysql -u USER_NAME -p DATABASE_NAME <\"FILE_NAME\"",
+                docs_href: "https://dev.mysql.com/doc/refman/8.0/en/mysqlimport.html",
+                example: `\`\`\`\n> mysql -u USER_NAME -p DATABASE_NAME <"FILE_NAME"\n> [Please Enter Password:]\n> USER_PASSWORD\n\n> [EXAMPLE]\n> realpath "2024-XX-XXTXXXXXX backup_database.sql"\n> [/home/site_name/public_html/2024-XX-XXTXXXXXX backup_database.sql]\n> mysql -u drupal_root -p root_v10 <"/home/site_name/public_html/2024-XX-XXTXXXXXX backup_database.sql"\n> [Please Enter Password:]\n> root\n\`\`\``,
+            },{
+                type: "Drush",
+                title: "Enable maintenance mode",
+                description: "make a Drupal site temporarily unavailable",
+                cmd: "drush variable-set --exact maintenance_mode 1",
+                docs_href: "",
+                example: `\`\`\`\ndrush variable-set --exact maintenance_mode 1 #enable maintenance mode \n drush variable-set --exact maintenance_mode 1 #disable maintenance mode\n\`\`\``,
+            },{
+                type: "Drush",
+                title: "Disable maintenance mode",
+                description: "make a Drupal site temporarily unavailable",
+                cmd: "drush variable-set --exact maintenance_mode 0",
+                docs_href: "",
+                example: `\`\`\`\ndrush variable-set --exact maintenance_mode 1 #enable maintenance mode \n drush variable-set --exact maintenance_mode 1 #disable maintenance mode\n\`\`\``,
             },
         ]
     );
